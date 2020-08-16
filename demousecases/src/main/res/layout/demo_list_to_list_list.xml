@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:name="at.naske.microdo.ListToListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            app:layoutManager="at.naske.microdo.lib.alternatinglist.AlternatingLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/list2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:path="test"
+            tools:listitem="@layout/demo_video_view_horizontal">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list2"
+            android:name="at.naske.microdo.ListToListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#717171"
+            android:padding="10dp"
+            app:layoutManager="at.naske.microdo.lib.alternatinglist.AlternatingLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/list"
+            app:path="test"
+            tools:listitem="@layout/demo_video_view_horizontal">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

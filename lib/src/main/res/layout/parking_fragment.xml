@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<at.naske.microdo.lib.parking.ParkingLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/parking_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        custom:scaleValueX="0.5"
+        custom:scaleValueY="0.5">
+
+</at.naske.microdo.lib.parking.ParkingLayout>

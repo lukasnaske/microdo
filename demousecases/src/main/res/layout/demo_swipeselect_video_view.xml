@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <at.naske.microdo.lib.swipeselect.SwipeSelectLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/demo_constraint_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="@+id/demo_constraint_wrapper"
+                    app:layout_constraintRight_toRightOf="@+id/demo_constraint_wrapper"
+                    app:layout_constraintTop_toTopOf="@+id/demo_constraint_wrapper">
+
+                <ImageView
+                        android:id="@+id/video_preview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:foregroundGravity="center_vertical|center_horizontal"
+                        android:scaleType="centerCrop" />
+
+                <VideoView
+                        android:id="@+id/video_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:translationZ="-1dp"
+                        android:visibility="gone" />
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </at.naske.microdo.lib.swipeselect.SwipeSelectLayout>
+
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ParkingLayout">
+        <attr name="scaleValueX" format="float" />
+        <attr name="scaleValueY" format="float" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tagging_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/cg_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <include
+            android:id="@+id/cg_top_left"
+            layout="@layout/cg_top_left_corner_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:background="#FFFFFF" />
+
+    <include
+        android:id="@+id/cg_top_right"
+        layout="@layout/cg_top_right_corner_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end" />
+
+    <include
+        android:id="@+id/cg_bottom_right"
+        layout="@layout/cg_bottom_right_corner_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" />
+
+    <include
+        android:id="@+id/cg_bottom_left"
+        layout="@layout/cg_bottom_left_corner_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start" />
+
+</FrameLayout>

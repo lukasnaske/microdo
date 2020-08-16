@@ -1,0 +1,5 @@
+<resources>
+    <attr name="path" format="string|reference"/>
+    <string name="app_name">lib</string>
+
+</resources>

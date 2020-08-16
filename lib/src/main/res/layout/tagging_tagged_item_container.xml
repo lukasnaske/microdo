@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tagging_constraint_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constrainedHeight="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tagged_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_tag"
+                app:layout_constraintLeft_toRightOf="@+id/left_tag"
+                app:layout_constraintRight_toLeftOf="@+id/right_tag"
+                app:layout_constraintTop_toBottomOf="@+id/top_tag">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+                android:id="@+id/right_tag"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:translationZ="5dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="#E70AFF"
+                tools:visibility="visible" />
+
+        <View
+                android:id="@+id/bottom_tag"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:translationZ="5dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:background="#1732ED"
+                tools:visibility="visible" />
+
+        <View
+                android:id="@+id/left_tag"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:translationZ="5dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="#4CFF00"
+                tools:visibility="visible" />
+
+        <View
+                android:id="@+id/top_tag"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:translationZ="5dp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="#F60505"
+                tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
+

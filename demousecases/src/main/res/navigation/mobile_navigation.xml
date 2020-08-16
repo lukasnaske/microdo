@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mobile_navigation"
+        app:startDestination="@id/nav_alternating_list">
+    <fragment
+            android:id="@+id/nav_alternating_list"
+            android:name="at.naske.microdo.demousecases.alternatinglist.DemoAlternatingListFragment"
+            android:label="Alternating List" />
+    <fragment
+            android:id="@+id/nav_list_to_list"
+            android:name="at.naske.microdo.demousecases.listtolist.DemoListToListFragment"
+            android:label="DemoListToListFragment" />
+    <fragment
+            android:id="@+id/nav_list_to_list_parking"
+            android:name="at.naske.microdo.demousecases.parking.DemoListToListParkingFragment"
+            android:label="DemoListToListParkingFragment" />
+    <fragment
+            android:id="@+id/nav_multimove"
+            android:name="at.naske.microdo.demousecases.multimove.DemoMultimoveFragment"
+            android:label="DemoMultimoveFragment" />
+    <fragment
+            android:id="@+id/nav_swipe_select"
+            android:name="at.naske.microdo.demousecases.swipeselect.DemoSwipeselectFragment"
+            android:label="DemoSwipeselectFragment" />
+    <fragment
+            android:id="@+id/nav_tagging"
+            android:name="at.naske.microdo.demousecases.taggingandcornergestures.DemoTaggingFragment"
+            android:label="DemoTaggingFragment" />
+</navigation>

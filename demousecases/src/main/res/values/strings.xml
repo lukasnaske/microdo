@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MicroDO Demo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">MicroDO Demo</string>
+    <string name="nav_header_subtitle">lukas@naske.at</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_alternating_list">Alternating List</string>
+    <string name="menu_list_to_list">List-To-List</string>
+    <string name="menu_list_to_list_parking">Parking</string>
+    <string name="menu_swipeselect">Swipeselect</string>
+    <string name="menu_multi_move">Mutlimove</string>
+    <string name="menu_corner_gestures">Corner Gestures</string>
+    <string name="menu_tagging_and_cg">Tagging \&amp; Corner Gestures</string>
+
+    <string name="home_second">Home Second</string>
+</resources>
