@@ -1,0 +1,41 @@
+apply plugin: 'maven-publish'
+apply plugin: 'com.jfrog.bintray'
+
+group 'at.naske.microdo'
+version '0.0.1'
+
+project.ext {
+    mavGitUrl = 'https://github.com/lukasnaske/microdo'
+    mavProjectName = 'MicroDO'
+    mavLibraryLicenses = ["MIT":'https://opensource.org/licenses/MIT']
+    mavLibraryDescription = "Software comopnents supporting the implementation of multimedia applcations on Android"
+    mavPublishToMavenLocal = true
+    mavSiteUrl = 'https://github.com/lukasnaske/microdo'
+}
+
+def properties = new Properties()
+properties.load(new FileInputStream("bintray.properties"))
+
+bintray {
+    user = properties.getProperty("user")
+    key = properties.getProperty("key")
+    publications = ['Production']
+    configurations = ['archives']
+    override = true
+    pkg {
+        repo = 'MicroDO'
+        name = 'MicroDO'
+        description = "Software comopnents supporting the implementation of multimedia applcations on Android"
+        publicDownloadNumbers = true
+        licenses = ['MIT']
+        vcsUrl = 'https://github.com/lukasnaske/microdo'
+        version {
+            name = this.version
+            desc = "Version ${this.version}"
+            released = new Date()
+            vcsTag = this.version
+        }
+    }
+}
+
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'
