@@ -20,3 +20,37 @@ to find specific usage instructions there.
 * [Multimove](lib/src/main/java/at/naske/microdo/lib/multimove/Readme.md) 
 
 ## How to include the library within your Code
+
+The library is published on jCenter. Add this to your `app:build.gradle` to add the MicroDO software 
+library to your project:
+
+```
+implementation 'at.naske.microdo:lib:0.0.1'
+```
+Maven:
+```xml
+<dependency>
+  <groupId>at.naske.microdo</groupId>
+  <artifactId>lib</artifactId>
+  <version>0.0.1</version>
+  <type>pom</type>
+</dependency>
+```
+
+Ivy:
+```xml
+<dependency org='at.naske.microdo' name='lib' rev='0.0.1'>
+  <artifact name='lib' ext='pom' />
+</dependency>
+```
+
+To include jCenter to pull projects from you have to include it in your main project `build.gradle` like
+this on the root level:
+
+```
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+```
