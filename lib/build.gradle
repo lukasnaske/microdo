@@ -5,8 +5,6 @@ apply from: 'publish.gradle'
 android {
     compileSdkVersion 29
 
-
-
     defaultConfig {
         minSdkVersion 24
         targetSdkVersion 29
@@ -27,7 +25,6 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'org.jcodec:jcodec:0.2.3'
     implementation 'org.jcodec:jcodec-android:0.2.3'
 

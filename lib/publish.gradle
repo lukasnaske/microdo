@@ -8,7 +8,7 @@ project.ext {
     mavGitUrl = 'https://github.com/lukasnaske/microdo'
     mavProjectName = 'MicroDO'
     mavLibraryLicenses = ["MIT":'https://opensource.org/licenses/MIT']
-    mavLibraryDescription = "Software comopnents supporting the implementation of multimedia applcations on Android"
+    mavLibraryDescription = "Software comopnents supporting the implementation of multimedia applcations for Android"
     mavPublishToMavenLocal = true
     mavSiteUrl = 'https://github.com/lukasnaske/microdo'
 }
