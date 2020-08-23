@@ -25,7 +25,7 @@ The library is published on jCenter. Add this to your `app:build.gradle` to add 
 library to your project:
 
 ```
-implementation 'at.naske.microdo:lib:0.0.1'
+implementation 'at.naske.microdo:lib:0.0.2'
 ```
 Maven:
 ```xml
@@ -33,14 +33,13 @@ Maven:
   <groupId>at.naske.microdo</groupId>
   <artifactId>lib</artifactId>
   <version>0.0.1</version>
-  <type>pom</type>
 </dependency>
 ```
 
 Ivy:
 ```xml
 <dependency org='at.naske.microdo' name='lib' rev='0.0.1'>
-  <artifact name='lib' ext='pom' />
+
 </dependency>
 ```
 
