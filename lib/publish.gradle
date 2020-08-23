@@ -3,7 +3,7 @@ apply plugin: 'com.jfrog.bintray'
 
 
 group 'at.naske.microdo'
-version '0.0.1'
+version '0.0.2'
 
 project.ext {
     mavGitUrl = 'https://github.com/lukasnaske/microdo'
@@ -47,6 +47,9 @@ publishing {
     publications {
 
         Production(MavenPublication) {
+            artifact("$buildDir/outputs/aar/lib-release.aar")  {
+                builtBy tasks.getByName("assemble")
+            }
             artifact sourcesJar
             pom.withXml {
                 def dependenciesNode = asNode().getAt('dependencies')[0] ?: asNode().appendNode('dependencies')
